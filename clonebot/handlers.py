@@ -6,9 +6,8 @@ import logging
 from pyrogram import Client, filters
 from pyrogram.errors import RPCError
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, Message
-from sqlalchemy import select
 
-from database.engine import AsyncSessionLocal
+from database.engine import AsyncSessionLocal, select
 from database.models import BotChannel, CloneUser
 from keyboards import BLUE, GREEN, EMOJI_CHECK, EMOJI_DEVIL, btn
 from utils.fsub import missing_channels
