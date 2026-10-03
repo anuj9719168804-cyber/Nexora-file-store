@@ -1,10 +1,6 @@
 """SQLAlchemy models for Nexora File Store (Neon Postgres)."""
 from __future__ import annotations
-
-import datetime as dt
-import secrets
-
-from sqlalchemy import (
+from database.engine import (
     BigInteger,
     Boolean,
     DateTime,
@@ -14,9 +10,11 @@ from sqlalchemy import (
     Text,
     UniqueConstraint,
     func,
+    DeclarativeBase,
+    Mapped,
+    mapped_column,
+    relationship,
 )
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
-
 
 class Base(DeclarativeBase):
     pass
