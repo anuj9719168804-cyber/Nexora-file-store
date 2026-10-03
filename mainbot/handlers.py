@@ -10,7 +10,7 @@ import datetime as dt
 from pyrogram import Client, filters
 from pyrogram.errors import RPCError
 from pyrogram.types import BotCommand, CallbackQuery, InlineKeyboardMarkup, Message
-from sqlalchemy import func, select
+from database.engine import func, select
 
 from bot_manager import manager
 from clonebot.handlers import register_clone_handlers
