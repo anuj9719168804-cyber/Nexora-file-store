@@ -1,11 +1,9 @@
-"""Nexora Bot Factory entrypoint."""
 from __future__ import annotations
 
 import asyncio
 import logging
 
 from pyrogram import Client
-from sqlalchemy import select
 from bot_manager import manager
 from clonebot.handlers import register_clone_handlers
 from config import settings
