@@ -15,8 +15,10 @@ class Settings:
     # Nexora File Store main bot token
     bot_token: str = "8719198691:AAFSNAe7Vxs2J7A256yFmvgCX8B-xQIqn00"
 
-    # Neon Postgres connection string
-    database_url: str = ""
+       # MongoDB Atlas
+    # Replace with your real MongoDB connection string.
+    mongo_uri: str = "mongodb+srv://Anujedit:Anujedit@cluster0.7cs2nhd.mongodb.net/?appName=Cluster0"
+    mongo_database: str = "nexora"
 
     # Telegram numeric user ID of the main owner
     main_owner_id: int = 8729304171
