@@ -5,7 +5,7 @@ import datetime as dt
 import secrets
 import string
 
-from sqlalchemy import select
+from database.engine import select
 
 from database.models import (
     NexoraEconomySettings,
